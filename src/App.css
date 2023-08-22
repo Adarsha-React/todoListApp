@@ -3,27 +3,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgray;
+  background-color: teal;
+  
 }
 
 .container {
+  position: relative;
   display: flex;
   flex-direction: column; 
   min-height: 80vh;
   min-width: 50vh;
   border: 1px solid black;
   align-items: center;
+  background-image: url("assests/images/todoLogo.png");
+  background-size: cover;
   
 }
 
 .todoForm {
   display: flex;
   justify-content: space-around;
-  width: 450px;
+  width: 550px;
 }
 
 input {
-  width: 80%;
+  position: absolute;
+  top: 130px;
+  left: 40px;
+  width: 70%;
   padding: 10px;
   border: none;
   outline: none;
@@ -41,8 +48,25 @@ button {
   cursor: pointer;
   font-size: 10px;
 }
+.add-btn {
+  position: absolute;
+  top: 132px;
+  right: 50px;
+  font-size: small;
+  font-weight: bold;
+  padding: 10px 10px;
+  margin: 0 5px;
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+
+}
 
 .todoList {
+  position: absolute;
+  top: 170px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -52,8 +76,8 @@ button {
   display: flex;
   border-radius: 20px;
   margin: 10px;
-  padding: 10px 20px;
-  width: 450px;
+  padding: 8px 8px;
+  width: 330px;
   background-color: lightblue;
   align-items: center;
   font-family: sans-serif;

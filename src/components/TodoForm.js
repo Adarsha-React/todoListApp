@@ -7,7 +7,9 @@ const TodoForm = (props) => {
         value={singleTodo}
         onChange={(e) => setSingleTodo(e.target.value)}
       />
-      <button type="submit"> {editId ? "Edit" : "Add"}</button>
+      <button type="submit" className="add-btn">
+        {editId ? "Edit" : "Add"}
+      </button>
     </form>
   );
 };
